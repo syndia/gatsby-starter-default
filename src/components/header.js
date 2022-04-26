@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { LegoContext } from "../context/LegoContext"
 
 const Header = ({ siteTitle }) => {
-  const { setChosenSet, setChosenTheme } = useContext(LegoContext);
+  // const { setChosenSet, setChosenTheme } = useContext(LegoContext);
 
   return (
     <header
