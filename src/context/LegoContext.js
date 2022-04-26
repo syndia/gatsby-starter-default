@@ -47,7 +47,7 @@ const LegoProvider = ({children}) => {
       value={{
            chosenSet,
            setChosenSet,
-           chosenTheme
+           chosenTheme,
            setChosenTheme,
            toggleOwned,
            ownedSets
