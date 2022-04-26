@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react'
 export const LegoContext = React.createContext()
 
 const LegoProvider = ({children}) => {
-  return <LegoContext.Provider
-    value={{
+  return (
+    <LegoContext.Provider
+      value={{
            chosenSet,
            setChosenSet,
            chosenTheme
@@ -13,7 +14,8 @@ const LegoProvider = ({children}) => {
            ownedSets
           }}>
             {children}
-</LegoContext.Provider>
+    </LegoContext.Provider>
+  )
 }
 
 export default LegoProvider
