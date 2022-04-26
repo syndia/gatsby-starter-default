@@ -2,6 +2,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+const { setChosenSet, setChosenTheme } = useContext(LegoContext);
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
