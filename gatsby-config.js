@@ -34,5 +34,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: "https://rebrickable.com/api/v3/lego",
+        headers: {
+          "Authorization": "key 9ba6b239ec36ecb0be385a636ac2492b",
+        },
+      },
+    },
   ],
 }
